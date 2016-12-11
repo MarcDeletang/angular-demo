@@ -6,12 +6,13 @@
   "dependencies": {
     "express": "^4.14.0",
     "gulp": "^3.9.1",
+    "gulp-clone": "^1.0.0",
     "gulp-inject": "^4.1.0",
+    "gulp-watch": "^4.3.11",
+    "main-bower-files": "^2.13.1",
     "stream-series": "^0.1.1"
   },
   "devDependencies": {
-    "angular-bootstrap": "^0.12.2",
-    "angular-material": "^1.1.1",
     "mocha": "^3.2.0"
   },
   "scripts": {
