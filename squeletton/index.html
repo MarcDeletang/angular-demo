@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="Todo" class="ng-cloak">
+<head>
+	<title>Exemple angular</title>
+
+
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- inject:css -->
+	<link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
+	<link rel="stylesheet" href="/assets/css/test.css">
+	<!-- endinject -->
+
+</head>
+<body>
+
+	<div ng-controller="MainCtrl as main">
+		{{ main.message }}
+	</div>
+	<div ng-controller="ScopeCtrl" >
+		{{ message }}
+	</div>
+	<!-- inject:js -->
+	<script src="/bower_components/angular/angular.js"></script>
+	<script src="/bower_components/angular-translate/angular-translate.js"></script>
+	<script src="/bower_components/angular-animate/angular-animate.js"></script>
+	<script src="/bower_components/angular-aria/angular-aria.js"></script>
+	<script src="/bower_components/angular-messages/angular-messages.js"></script>
+	<script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+	<script src="/bower_components/angular-material/angular-material.js"></script>
+	<script src="/assets/js/app.js"></script>
+	<!-- endinject -->
+
+</body>
+</html>
