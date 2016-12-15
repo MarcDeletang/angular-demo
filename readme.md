@@ -34,3 +34,5 @@ http://pastebin.com/czXbjeMB
 
 
 module.exports.watch = YourWatchFunction
+
+<tr ng-repeat="item in items|orderBy:'date':true|filter:customFilter">
