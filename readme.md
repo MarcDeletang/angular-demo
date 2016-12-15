@@ -16,3 +16,8 @@
 [Liens jour 1 (documentation)]: <https://docs.google.com/document/d/1FpTB2khqOOo4eYpNasKQlCgh7Nmda5nBgUgoUzJAEx8/edit>
 
 [Exemple d'application]: <https://github.com/MarcDeletang/angular-demo/tree/master/squeletton>
+
+
+
+Premiere tache gulp
+http://pastebin.com/aTsFjsQ5
