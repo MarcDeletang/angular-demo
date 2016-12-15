@@ -1,0 +1,11 @@
+.main-content {
+	padding-top: 70px;
+}
+
+.top-padded {
+	padding-top: 50px;
+}
+
+.clickable {
+  cursor: pointer;
+}
