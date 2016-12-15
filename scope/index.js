@@ -5,4 +5,6 @@ var miniAPI = require('./mini-api.js').init(app)
 require('./gulpfile.js').watch()
 
 app.use(express.static('www'))
-app.listen(1337)
+var port = 1337
+console.log('listen', port)
+app.listen(port)
