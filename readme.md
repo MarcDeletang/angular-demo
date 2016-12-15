@@ -32,5 +32,13 @@ index.js
 http://pastebin.com/czXbjeMB
 
 
+```
 
 module.exports.watch = YourWatchFunction
+
+<tr ng-repeat="item in items|orderBy:'date':true|filter:customFilter">
+			<td>{{ $index }}</td>
+							<td>{{ item.data }}</td>
+							<td>{{ item.date | date}}</td>
+</tr>
+```

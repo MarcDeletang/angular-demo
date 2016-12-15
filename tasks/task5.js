@@ -24,7 +24,7 @@ function build() {
 			base: 'bower_components'
 		}).pipe(cloneBower)
 
-	gulp.src('www/index.html')
+	gulp.src('index.html')
 		.pipe(inject(series(bowerStream, cssStream, jsStream), {
 			relative: false
 		}))
