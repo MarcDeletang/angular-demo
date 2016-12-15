@@ -32,9 +32,5 @@ index.js
 http://pastebin.com/czXbjeMB
 
 
-'''
-var watcher = function () {
-	return watch(watched, build)
-}
-module.exports.watch = watcher
-'''
+
+module.exports.watch = YourWatchFunction
