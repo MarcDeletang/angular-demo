@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html ng-app="Todo" class="ng-cloak">
+<head>
+	<title>Exemple Todo List</title>
+
+
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- inject:css -->
+	<!-- endinject -->
+
+</head>
+<body ng-controller="MainController">
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<p class="navbar-text">{{ showPage == false ? 'Nothing to show here :(' : 'Here you are !' }}</p>
+		</div>
+	</nav>
+	<div class="container main-content" ng-show="showPage">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="form-group">
+					<label class="control-label" for="inputNewItem">Ajouter un élément</label>
+					<p class="input-group">
+						<input id="inputNewItem" type="text" ng-model="newItem">
+					</p>
+					<button type="button" class="btn btn-primary" ng-click="submit()">Ajouter un élément</button>
+					<button type="button" class="btn btn-danger" ng-click="items.pop()">Supprimer les éléments</button>
+					<button type="button" class="btn btn-danger" ng-click="items.shift()">Supprimer le dernier élément</button>
+					<p class="input-group">
+						<input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="dt" is-open="opened" close-text="Close"/>
+						<span class="input-group-btn">
+							<button type="button" class="btn btn-default" ng-click="opened = true"><i class="glyphicon glyphicon-calendar"></i></button>
+						</span>
+					</p>
+				</div>
+			</div>
+
+			Hello, im a search input
+
+			<input type="text" ng-model="search" name="" />
+
+			<div class="col-md-6">
+				<table class="table-bordered" style="width: 100%">
+					<thead>
+						<th class="text-center">Index</th>
+						<th class="text-center">Note</th>
+						<th class="text-center">Date</th>
+					</thead>
+					<tbody>
+						<tr ng-repeat="item in items|orderBy:'date':true|filter:customSearch">
+							<td>{{ $index }}</td>
+							<td>{{ item.data }}</td>
+							<td>{{ item.date | date}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<hr>
+
+		<div class="row">
+			<div class="col-md-6">
+				<table class="table-bordered" style="width: 100%">
+					<thead>
+						<th class="text-center">Index</th>
+						<th class="text-center">Note</th>
+						<th class="text-center">Date</th>
+					</thead>
+					<tbody elems-isolated source="items">
+					</tbody>
+				</table>
+			</div>
+			<div class="col-md-6">
+				<table class="table-bordered" style="width: 100%">
+					<thead>
+						<th class="text-center">Index</th>
+						<th class="text-center">Note</th>
+						<th class="text-center">Date</th>
+					</thead>
+					<tbody>
+						<tr ng-repeat="item in items | orderBy:'date':true | limitTo:5" elem-important>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+
+	</div>
+
+	<!-- inject:js -->
+	<!-- endinject -->
+
+</body>
+</html>
