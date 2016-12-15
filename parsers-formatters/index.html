@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="Todo" class="ng-cloak">
+<head>
+	<title>Exemple angular</title>
+
+
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- inject:css -->
+	<!-- endinject -->
+
+</head>
+<body>
+
+	<div ng-controller="MainController as main">
+		<input type="text" format-input ng-model="inputVal" >
+		{{ inputVal }}
+		<br>
+		<input type="text" format-from-code ng-model="inputVal2" >
+		{{ inputVal2 }}
+	</div>
+	<!-- inject:js -->
+	<!-- endinject -->
+
+</body>
+</html>
