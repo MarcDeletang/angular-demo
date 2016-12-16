@@ -37,7 +37,6 @@ var Todo = angular.module('Todo', ['ui.bootstrap'])
 			}
 		}
 	})
-	//PAS IMPORTANT POUR LE MOMENT
 	.config(function (exempleServiceProvider) {
 		console.log('2: Appel de configuration - exempleServiceProvider.message', exempleServiceProvider.message)
 			//exempleServiceProvider.message = 'JOHNNY'

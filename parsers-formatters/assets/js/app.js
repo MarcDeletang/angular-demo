@@ -7,7 +7,7 @@ var Todo = angular.module('Todo', ['ui.bootstrap'])
       //Permet l'injection de ngModelController
       require: 'ngModel',
       link: function (scope, element, attrs, ngModelController) {
-        //Update quand l'input est modifé par l'utilisateur
+        //Update lorsque l'input est modifé par l'utilisateur
         ngModelController.$parsers.push(function (data) {
           if (data) {
             var up = data.toUpperCase()
