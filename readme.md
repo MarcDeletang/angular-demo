@@ -6,6 +6,10 @@
 
 * [Liens jour 1 (documentation)]
 
+* [Slides jour 2]
+
+* [Liens jour 2 (documentation)]
+
 ### Github
 
 * [Exemple d'application]
