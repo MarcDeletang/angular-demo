@@ -1,5 +1,6 @@
 var items = {}
 var id = 0
+var _ = require('lodash')
 
 function getId() {
 	return id++

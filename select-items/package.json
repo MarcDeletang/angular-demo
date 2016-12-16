@@ -10,6 +10,7 @@
     "gulp-clone": "^1.0.0",
     "gulp-inject": "^4.1.0",
     "gulp-watch": "^4.3.11",
+    "lodash": "^4.17.2",
     "main-bower-files": "^2.13.1",
     "stream-series": "^0.1.1"
   },
