@@ -1,2 +1,4 @@
 {{ message }}
+<input type="string" ng-model="param"></input>
 <button ng-click="go('/admin')">Access admin</button>
+<button ng-click="go('/foo/' + param)">Test url params</button>
